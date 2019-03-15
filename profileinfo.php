@@ -64,7 +64,7 @@ header( 'Content-Type: text/html; charset=utf-8' );
 			padding: 0.5em 1em;
 			background: #fff;
 			font: 14px/1.6 sans-serif;
-			color: #333;
+			color: #fcfcfc;
 		}
 
 		p, ul, ol, table {
@@ -139,7 +139,7 @@ header( 'Content-Type: text/html; charset=utf-8' );
 
 		.table-hover tbody tr:hover td,
 		.table-hover tbody tr:hover th {
-			background-color: #f5f5f5;
+			background-color: #4c4a4a;
 		}
 
 		hr {

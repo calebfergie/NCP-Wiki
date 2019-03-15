@@ -1,6 +1,6 @@
 [submodule "skins/Tweeki"]
 	path = skins/Tweeki
-	url = https://github.com/thaider/Tweeki
+	url = https://github.com/calebfergie/Tweeki.git
 [submodule "extensions/InputBox"]
 	path = extensions/InputBox
 	url = https://github.com/wikimedia/mediawiki-extensions-InputBox

@@ -1,0 +1,3 @@
+[submodule "skins/Tweeki"]
+	path = skins/Tweeki
+	url = https://github.com/thaider/Tweeki

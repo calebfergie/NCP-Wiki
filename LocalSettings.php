@@ -124,3 +124,7 @@ $wgDefaultSkin = "tweeki";
 
 # End of automatically generated settings.
 # Add more configuration options below.
+
+#Caleb Stuff
+#Textbox extension
+wfLoadExtension( 'InputBox' );

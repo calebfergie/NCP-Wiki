@@ -83,3 +83,4 @@ Thumbs.db
 /.htpasswd
 /tests/phan/issues
 *.rej
+/private

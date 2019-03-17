@@ -4,3 +4,6 @@
 [submodule "skins/Tweeki"]
 	path = skins/Tweeki
 	url = https://github.com/calebfergie/Tweeki
+[submodule "extensions/WYSIWYG-CKeditor"]
+	path = extensions/WYSIWYG-CKeditor
+	url = https://github.com/Mediawiki-wysiwyg/WYSIWYG-CKeditor.git

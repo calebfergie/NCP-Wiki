@@ -138,8 +138,8 @@ $wgDefaultUserOptions['riched_use_popup']             = false;
 $wgDefaultUserOptions['riched_toggle_remember_state'] = true;
 $wgDefaultUserOptions['riched_link_paste_text']       = true;
 
-//MW<=1.24 or versions of WYSIWYG <= "1.5.6_0 [B551++01.07.2016]"
-require_once "$IP/extensions/WYSIWYG/WYSIWYG.php";
+// //MW<=1.24 or versions of WYSIWYG <= "1.5.6_0 [B551++01.07.2016]"
+// require_once "$IP/extensions/WYSIWYG/WYSIWYG.php";
 
 //MW>=1.25 and versions of WYSIWYG >= "1.5.6_0 [B551+02.07.2016]"
 wfLoadExtension( 'WYSIWYG' );

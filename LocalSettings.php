@@ -147,4 +147,4 @@ wfLoadExtension( 'WYSIWYG-CKeditor/WYSIWYG' );
 //MW>=1.25 and versions of WYSIWYG >= "1.5.6_0 [B551+02.07.2016]" has dependency
 //to module of WikiEditor so it must be enabled too (or otherwise file
 //extension.json has to be edited manually to remove dependency)
-wfLoadExtension( 'WikiEditor' );
+wfLoadExtension( 'WYSIWYG-CKeditor/WikiEditor' );

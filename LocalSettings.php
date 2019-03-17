@@ -148,3 +148,6 @@ wfLoadExtension( 'WYSIWYG-CKeditor/WYSIWYG' );
 //to module of WikiEditor so it must be enabled too (or otherwise file
 //extension.json has to be edited manually to remove dependency)
 wfLoadExtension( 'WYSIWYG-CKeditor/WikiEditor' );
+
+#Debugging info in browers when Exception happens 
+$wgShowExceptionDetails = true;

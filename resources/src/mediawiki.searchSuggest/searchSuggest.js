@@ -38,8 +38,8 @@
 			// container's borders, in other skins it should align with the input
 			// element (not the search form, as that would leave the buttons
 			// vertically between the input and the suggestions).
-			$searchRegion = $( '#simpleSearch, #searchInput' ).first(),
-			$searchInput = $( '#searchInput' ),
+			$searchRegion = $( '#createbox, #createboxInput' ).first(),
+			$searchInput = $( '#createboxInput' ),
 			previousSearchText = $searchInput.val();
 
 		// Compute form data for search suggestions functionality.

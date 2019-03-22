@@ -143,6 +143,6 @@ $wgLinkTitlesSmartMode = true;
 
 #UI
 #Tweeki
-$wgTweekiSkinHideExcept[array( 'SEARCH' => true, 'sidebar-right' => true)]['Administrators']
+$wgTweekiSkinHideExcept[array( 'SEARCH' => true, 'sidebar-right' => true)] = ['Administrators']
 // $wgTweekiSkinHideAll = array( 'SEARCH' => true, 'sidebar-right' => true);
 // $wgTweekiSkinHideAnon = array( 'SEARCH' => true, 'sidebar-right' => true);

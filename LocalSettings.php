@@ -140,3 +140,7 @@ wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'LinkTitles' );
 # remove case sensitivity
 $wgLinkTitlesSmartMode = true;
+
+#UI
+#Tweeki
+$wgTweekiSkinHideAll = array( 'footer-info' => true);

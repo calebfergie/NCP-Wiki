@@ -132,6 +132,10 @@ $wgShowExceptionDetails = true;
 #Textbox extension
 wfLoadExtension( 'InputBox' );
 
+#Wiki Editor
+wfLoadExtension( 'WikiEditor' );
+
+
 #WYSIWYG Editor
 #Default user options:
 // $wgDefaultUserOptions['riched_disable']               = false;

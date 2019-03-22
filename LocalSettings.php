@@ -143,4 +143,4 @@ $wgLinkTitlesSmartMode = true;
 
 #UI
 #Tweeki
-$wgTweekiSkinHideAll = array( 'footer-info' => true);
+$wgTweekiSkinHideAll = array( 'SEARCH' => true, 'sidebar-right' => true);

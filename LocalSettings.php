@@ -127,6 +127,9 @@ $wgDefaultSkin = "tweeki";
 
 #Caleb's Settings
 
+#Favicon :P
+$wgFavicon = "$wgScriptPath/images/favicon.ico";
+
 #Debugging info in browers when Exception happens
 $wgShowExceptionDetails = true;
 

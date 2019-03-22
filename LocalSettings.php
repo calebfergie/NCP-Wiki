@@ -125,7 +125,8 @@ $wgDefaultSkin = "tweeki";
 # End of automatically generated settings.
 # Add more configuration options below.
 
-#Caleb Stuff
+#Caleb's Settings
+
 #Debugging info in browers when Exception happens
 $wgShowExceptionDetails = true;
 
@@ -135,24 +136,7 @@ wfLoadExtension( 'InputBox' );
 #Wiki Editor
 wfLoadExtension( 'WikiEditor' );
 
-
-#WYSIWYG Editor
-#Default user options:
-// $wgDefaultUserOptions['riched_disable']               = false;
-// $wgDefaultUserOptions['riched_start_disabled']        = false;
-// $wgDefaultUserOptions['riched_use_toggle']            = true;
-// $wgDefaultUserOptions['riched_use_popup']             = false;
-// $wgDefaultUserOptions['riched_toggle_remember_state'] = true;
-// $wgDefaultUserOptions['riched_link_paste_text']       = true;
-
-// //MW<=1.24 or versions of WYSIWYG <= "1.5.6_0 [B551++01.07.2016]"
-// require_once "$IP/extensions/WYSIWYG/WYSIWYG.php";
-
-// //MW>=1.25 and versions of WYSIWYG >= "1.5.6_0 [B551+02.07.2016]"
-// wfLoadExtension( 'WYSIWYG-CKeditor/WYSIWYG' );
-//
-// //MW>=1.25 and versions of WYSIWYG >= "1.5.6_0 [B551+02.07.2016]" has dependency
-// //to module of WikiEditor so it must be enabled too (or otherwise file
-// //extension.json has to be edited manually to remove dependency)
-// wfLoadExtension( 'WYSIWYG-CKeditor/WikiEditor' );
-//
+#Auto-Linker
+wfLoadExtension( 'LinkTitles' );
+# remove case sensitivity
+$wgLinkTitlesSmartMode = true;

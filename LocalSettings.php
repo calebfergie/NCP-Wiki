@@ -153,9 +153,9 @@ $wgTweekiSkinHideAll = array( 'SEARCH' => true,  'TOOLBOX' => true, 'TOOLBOX-EXT
 
 $wgTweekiSkinGridBoth = array(
  "leftoffset" => 0,
- "leftwidth" => 2, 
+ "leftwidth" => 2,
  "mainoffset" => 0,
  "mainwidth" => 8,
  "rightoffset" => 0,
- "rightwidth" => 2
+ "rightwidth" => 0
 );

@@ -150,3 +150,12 @@ $wgLinkTitlesSmartMode = true;
 #$wgTweekiSkinHideExcept[array( 'SEARCH' => true, 'sidebar-right' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true)] = ['Administrators']
 $wgTweekiSkinHideAll = array( 'SEARCH' => true,  'TOOLBOX' => true, 'TOOLBOX-EXT' => true);
 #$wgTweekiSkinHideAnon = array( 'SEARCH' => true, 'sidebar-right' => true);
+
+$wgTweekiSkinGridBoth = array(
+ "leftoffset" => 0,
+ "leftwidth" => 2, 
+ "mainoffset" => 0,
+ "mainwidth" => 8,
+ "rightoffset" => 0,
+ "rightwidth" => 2
+);

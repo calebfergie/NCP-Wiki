@@ -215,7 +215,9 @@
 			'#searchInput',
 			// Generic selector for skins with multiple searchboxes (used by CologneBlue)
 			// and for MediaWiki itself (special pages with page title inputs)
-			'.mw-searchInput'
+			'.mw-searchInput',
+			//Caleb added for InputBox
+			'#createboxInput'
 		];
 		$( searchboxesSelectors.join( ', ' ) )
 			.suggestions( {

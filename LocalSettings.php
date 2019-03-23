@@ -150,3 +150,6 @@ $wgLinkTitlesSmartMode = true;
 #$wgTweekiSkinHideExcept[array( 'SEARCH' => true, 'sidebar-right' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true)] = ['Administrators']
 $wgTweekiSkinHideAll = array('footer-info'=> true, 'navbar' => true, 'firstHeading' => true, 'SEARCH' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true, 'sidebar-right' => true, 'first-heading' => true);
 #$wgTweekiSkinHideAnon = array( 'SEARCH' => true, 'sidebar-right' => true);
+
+#Navigation
+require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");

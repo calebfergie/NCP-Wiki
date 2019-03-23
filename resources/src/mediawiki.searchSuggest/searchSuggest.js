@@ -38,8 +38,8 @@
 			// container's borders, in other skins it should align with the input
 			// element (not the search form, as that would leave the buttons
 			// vertically between the input and the suggestions).
-			$searchRegion = $( '.createbox, .createboxInput' ).first(),
-			$searchInput = $( '.createboxInput' ),
+			$searchRegion = $( '#simpleSearch, #searchInput' ).first(),
+			$searchInput = $( '#searchInput' ),
 			previousSearchText = $searchInput.val();
 
 		// Compute form data for search suggestions functionality.
@@ -211,8 +211,6 @@
 
 		// Generic suggestions functionality for all search boxes
 		searchboxesSelectors = [
-			//Caleb added for InputBox
-			'.createboxInput',
 			// Primary searchbox on every page in standard skins
 			'#searchInput',
 			// Generic selector for skins with multiple searchboxes (used by CologneBlue)

@@ -38,8 +38,8 @@
 			// container's borders, in other skins it should align with the input
 			// element (not the search form, as that would leave the buttons
 			// vertically between the input and the suggestions).
-			$searchRegion = $( '#simpleSearch, #searchInput' ).first(),
-			$searchInput = $( '#searchInput' ),
+			$searchRegion = $( '.bodySearchWrap, .mw-ui-input' ).first(),
+			$searchInput = $( '.mw-ui-input' ),
 			previousSearchText = $searchInput.val();
 
 		// Compute form data for search suggestions functionality.
@@ -215,7 +215,9 @@
 			'#searchInput',
 			// Generic selector for skins with multiple searchboxes (used by CologneBlue)
 			// and for MediaWiki itself (special pages with page title inputs)
-			'.mw-searchInput'
+			'.mw-searchInput',
+			//CF Additiona
+			'.mw-ui-input'
 		];
 		$( searchboxesSelectors.join( ', ' ) )
 			.suggestions( {

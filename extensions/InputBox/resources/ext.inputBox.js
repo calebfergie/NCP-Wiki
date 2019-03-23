@@ -5,6 +5,7 @@
  * @license http://opensource.org/licenses/MIT MIT License
  */
 ( function ( $, mw ) {
+	console.log("firing inputbox function");
 	'use strict';
 	mw.hook( 'wikipage.content' ).add( function ( $content ) {
 		var $input = $content.find( '.createboxInput:not([type=hidden])' ),
@@ -23,6 +24,8 @@
 		for ( i = 0; i < $input.length; i++ ) {
 			onChange.call( $input.get( i ) );
 		}
+
+		console.log("finishing inputbox function");
 
 		$input.on( 'keyup input change', $.debounce( 50, onChange ) );
 	} );

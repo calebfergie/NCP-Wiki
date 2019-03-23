@@ -983,7 +983,7 @@
 	"search-filter-title-prefix": "Only searching in pages whose title starts with \"$1\"",
 	"search-filter-title-prefix-reset": "Search all pages",
 	"searchresults-title": "Search results for \"$1\"",
-	"titlematches": "<H4>Events with similar titles</H4>",
+	"titlematches": "Events with similar titles",
 	"textmatches": "Other related events",
 	"notextmatches": "",
 	"prevn": "previous {{PLURAL:$1|$1}}",

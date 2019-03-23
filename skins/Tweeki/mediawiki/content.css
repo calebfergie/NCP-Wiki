@@ -148,3 +148,7 @@ div.tleft {
 .wikiEditor-ui-text {
   color: #191919;
 }
+
+#ugc input {
+	display:none;
+}

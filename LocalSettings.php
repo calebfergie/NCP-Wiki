@@ -134,9 +134,7 @@ $wgFavicon = "$wgScriptPath/images/favicon.ico";
 $wgShowExceptionDetails = true;
 
 #Textbox extension
-#wfLoadExtension( 'InputBox' );
-
-
+wfLoadExtension( 'InputBox' );
 
 #Wiki Editor
 wfLoadExtension( 'WikiEditor' );

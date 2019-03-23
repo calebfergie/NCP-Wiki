@@ -2,7 +2,7 @@
  * MediaWiki style sheet for general styles on complex content
  *
  * copied over from resources/src/mediawiki.skinning/
- * 
+ *
  * adaptation: removed stylings for TOC
  */
 
@@ -143,4 +143,8 @@ div.tright {
 /* @noflip */
 div.tleft {
 	margin: .5em 1.4em 1.3em 0;
+}
+
+.mw-editform {
+  color: #191919;
 }

@@ -148,6 +148,7 @@ $wgLinkTitlesSmartMode = true;
 #Tweeki
 #$wgTweekiSkinHideExcept['sidebar-right'] = ['Administrators'];
 #$wgTweekiSkinHideExcept[array( 'SEARCH' => true, 'sidebar-right' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true)] = ['Administrators']
+$wgTweekiSkinHideExcept['sidebar-left'] = ['sysop'];
 $wgTweekiSkinHideAll = array('footer-info'=> true, 'navbar' => true, 'firstHeading' => true, 'SEARCH' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true, 'sidebar-right' => true, 'first-heading' => true);
 #$wgTweekiSkinHideAnon = array( 'SEARCH' => true, 'sidebar-right' => true);
 

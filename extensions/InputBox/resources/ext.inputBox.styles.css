@@ -18,6 +18,6 @@
 	margin-bottom: 0.5em;
 }
 
-input[value="hidden"] {
+input[type="submit"] {
 	display:none!important;
 }

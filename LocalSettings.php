@@ -73,7 +73,7 @@ $wgMemCachedServers = [];
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
 $wgEnableUploads = true;
-$wgUseImageMagick = true;
+$wgUseImageMagick = false;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
@@ -141,6 +141,8 @@ wfLoadExtension( 'WikiEditor' );
 
 #Auto-Linker
 wfLoadExtension( 'LinkTitles' );
+# Create links when pages are created  or edited
+$wgLinkTitlesParseOnEdit = true;
 # remove case sensitivity
 $wgLinkTitlesSmartMode = true;
 
@@ -149,8 +151,8 @@ $wgLinkTitlesSmartMode = true;
 #$wgTweekiSkinHideExcept['sidebar-left'] = ['Administrators'];
 #$wgTweekiSkinHideExcept['sidebar-left'] = ['sysop'];
 #$wgTweekiSkinHideExcept[array( 'SEARCH' => true, 'sidebar-right' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true)] = ['Administrators']
-$wgTweekiSkinHideAll = array('footer-info'=> true, 'navbar' => true, 'firstHeading' => true, 'SEARCH' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true, 'sidebar-right' => true, 'first-heading' => true);
-#$wgTweekiSkinHideAnon = array( 'SEARCH' => true, 'sidebar-right' => true);
+$wgTweekiSkinHideAll = array('footer-info'=> true, 'navbar' => true, 'SEARCH' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true, 'sidebar-right' => true, 'first-heading' => true);
+#$wgTweekiSkinHideAnon = array( 'SEARCH' => true, 'sidebar-right' => true); 'firstHeading' => true,
 
 #Navigation
 require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");

@@ -18,6 +18,6 @@
 	margin-bottom: 0.5em;
 }
 
-input[value="create"] {
+input[value="hidden"] {
 	display:none!important;
 }

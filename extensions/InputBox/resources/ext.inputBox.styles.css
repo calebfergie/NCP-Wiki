@@ -1,7 +1,7 @@
 .mw-inputbox-centered {
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
+	text-align: left;
 }
 
 .mw-inputbox-inline {
@@ -15,5 +15,6 @@
 }
 
 .mw-inputbox-input {
+	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }

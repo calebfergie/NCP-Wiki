@@ -1103,7 +1103,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #63d49f;
+  color: #63d39f;
   text-decoration: underline;
 }
 a:focus {
@@ -3118,27 +3118,27 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #303030;
-  background-color: #3772f2;
-  border-color: #1f61f0;
+  background-color: #33b779;
+  border-color: #2da36c;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #303030;
-  background-color: #0f53e7;
-  border-color: #093187;
+  background-color: #288f5f;
+  border-color: #123f2a;
 }
 .btn-primary:hover {
   color: #303030;
-  background-color: #0f53e7;
-  border-color: #0d47c5;
+  background-color: #288f5f;
+  border-color: #20734c;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #303030;
-  background-color: #0f53e7;
+  background-color: #288f5f;
   background-image: none;
-  border-color: #0d47c5;
+  border-color: #20734c;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3150,8 +3150,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #303030;
-  background-color: #0d47c5;
-  border-color: #093187;
+  background-color: #20734c;
+  border-color: #123f2a;
 }
 .btn-primary.disabled:hover,
 .btn-primary[disabled]:hover,
@@ -3162,11 +3162,11 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #3772f2;
-  border-color: #1f61f0;
+  background-color: #33b779;
+  border-color: #2da36c;
 }
 .btn-primary .badge {
-  color: #3772f2;
+  color: #33b779;
   background-color: #303030;
 }
 .btn-success {
@@ -3403,7 +3403,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #63d49f;
+  color: #63d39f;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4717,7 +4717,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #63d49f;
+  color: #63d39f;
   background-color: #ffffff;
   border-color: #dddddd;
 }

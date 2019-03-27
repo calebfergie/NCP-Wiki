@@ -2,7 +2,7 @@
  * MediaWiki style sheet for general styles on basic content elements
  *
  * copied over from resources/src/mediawiki.skinning/
- * 
+ *
  * adaptation: removed stylings for almost everything
  */
 
@@ -29,11 +29,11 @@ pre, code, tt, kbd, samp, .mw-code {
 }
 
 code {
-	color: black;
-	background-color: #f9f9f9;
-	border: 1px solid #ddd;
+	color: #fff;
+	background-color: #303030;
+	/* border: 1px solid #ddd;
 	border-radius: 2px;
-	padding: 1px 4px;
+	padding: 1px 4px; */
 }
 
 pre, .mw-code {

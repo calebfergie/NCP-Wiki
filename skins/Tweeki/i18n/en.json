@@ -20,7 +20,7 @@
 	"tweeki-subnav-wrapperclass": "nav btn-group",
 	"tweeki-subnav-dropdownclass": "dropdown-menu-right",
 	"tweeki-sidebar-left": "",
-	"tweeki-sidebar-left-btnclass": "btn btn-primary btn-block",
+	"tweeki-sidebar-left-btnclass": "btn btn-outline-primary btn-block",
 	"tweeki-sidebar-left-wrapperclass": "btn-group btn-block",
 	"tweeki-sidebar-right": "EDIT-EXT,TOC",
 	"tweeki-sidebar-right-btnclass": "btn btn btn-outline-primary btn-block",

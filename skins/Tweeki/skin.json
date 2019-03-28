@@ -192,9 +192,9 @@
 		},
 		"TweekiSkinGridLeft": {
 			"leftoffset": 0,
-			"leftwidth": 2,
+			"leftwidth": 3,
 			"mainoffset": 0,
-			"mainwidth": 8 
+			"mainwidth": 8
 		},
 		"TweekiSkinGridRight": {
 			"mainoffset": 0,

@@ -995,7 +995,7 @@
 	"shown-title": "Show $1 {{PLURAL:$1|result|results}} per page",
 	"viewprevnext": "View ($1 {{int:pipe-separator}} $2) ($3)",
 	"searchmenu-exists": "<strong>There is a page named \"[[:$1]]\" on this wiki.</strong> {{PLURAL:$2|0=|See also the other search results found.}}",
-	"searchmenu-new": "<H2>We don't know what \"[[{{fullurl:$1|action=edit&preload=Template:useful-content}} $1]]\" means!</H2><br><H4>Click the link to define what should happen when you \"[[:$1]]\"</H4><br><br>{{PLURAL:$2|0=|...or see similar commands below.|...or try similar commands below.}}",
+	"searchmenu-new": "<H2>We don't know what \"[[{{fullurl:$1|action=edit&preload=Template:useful-content}}]]$1\" means!</H2><br><H4>Click the link to define what should happen when you \"[[:$1]]\"</H4><br><br>{{PLURAL:$2|0=|...or see similar commands below.|...or try similar commands below.}}",
 	"searchmenu-new-nocreate": "",
 	"searchprofile-articles": "Content pages",
 	"searchprofile-images": "Multimedia",

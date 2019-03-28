@@ -35,7 +35,7 @@
 	"tweeki-footer-standard-wrapperclass": "dropup",
 	"tweeki-toolbox": "<span class='glyphicon glyphicon-cog'></span>",
 	"tweeki-login": "Login / Create Account",
-	"tweeki-edit-ext": "Edit $1",
+	"tweeki-edit-ext": "Modify This Page",
 	"tweeki-container-class": "container",
 	"tweeki-editsection-text": "",
 	"tweeki-editsection-class": "tw-editsection-onhover",

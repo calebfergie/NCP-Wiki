@@ -146,6 +146,11 @@ $wgLinkTitlesParseOnEdit = true;
 # remove case sensitivity
 $wgLinkTitlesSmartMode = true;
 
+#Security
+#Limit edits from non-confirmed & anon members
+$wgRateLimits['edit']['newbie'] = array( 4, 60 );
+$wgRateLimits['edit']['ip'] = array( 2, 60 );
+
 #UI
 #Tweeki
 #$wgTweekiSkinHideExcept['sidebar-left'] = ['Administrators'];

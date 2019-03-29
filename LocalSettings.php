@@ -146,6 +146,10 @@ $wgLinkTitlesParseOnEdit = true;
 # remove case sensitivity
 $wgLinkTitlesSmartMode = true;
 
+#Pre-loader (for new pages)
+wfLoadExtension( 'Preloader' );
+$wgPreloaderSource[ NS_MAIN ] = 'Template:Useful-content';
+
 #Security
 #Limit edits from non-confirmed & anon members
 $wgRateLimits['edit']['newbie'] = array( 4, 60 );

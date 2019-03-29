@@ -73,7 +73,7 @@ $wgMemCachedServers = [];
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
 $wgEnableUploads = true;
-$wgUseImageMagick = false;
+$wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
@@ -141,9 +141,9 @@ wfLoadExtension( 'WikiEditor' );
 
 #Auto-Linker
 wfLoadExtension( 'LinkTitles' );
-# Create links when pages are created  or edited
+# Create links when pages are created  or edited - not sure this is working
 $wgLinkTitlesParseOnEdit = true;
-# remove case sensitivity
+# remove case sensitivity with smart mode
 $wgLinkTitlesSmartMode = true;
 
 #Pre-loader (for new pages)

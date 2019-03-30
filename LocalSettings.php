@@ -154,8 +154,8 @@ $wgPreloaderSource[ NS_MAIN ] = 'Template:Useful-content';
 
 #Security
 #Limit edits from non-confirmed & anon members
-$wgRateLimits['edit']['newbie'] = array( 4, 60 );
-$wgRateLimits['edit']['ip'] = array( 2, 60 );
+$wgRateLimits['edit']['newbie'] = array( 10, 60 );
+$wgRateLimits['edit']['ip'] = array( 4, 60 );
 #Regex on common spam words via SpamRegex extension
 $wgSpamRegex = "/online-casino|buy-viagra|adipex|phentermine|adult-website\.com|display:none|overflow:\s*auto;\s*height:\s*[0-4]px;/i";
 

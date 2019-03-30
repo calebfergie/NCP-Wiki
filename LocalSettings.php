@@ -133,6 +133,21 @@ $wgFavicon = "$wgScriptPath/images/favicon.ico";
 #Debugging info in browers when Exception happens
 $wgShowExceptionDetails = true;
 
+#AWS Extension
+wfLoadExtension( 'AWS' );
+// Configure AWS credentials.
+// THIS IS NOT NEEDED if your EC2 instance has an IAM instance profile.
+$wgAWSCredentials = [
+	'key' => getenv("AWS_ACCESS_KEY_ID"),
+	'secret' => getenv("AWS_SECRET_ACCESS_KEY"),
+	'token' => false
+];
+
+$wgAWSRegion = 'us-east-1'; # Northern Virginia
+
+// Replace <something> with the name of your S3 bucket, e.g. wonderfulbali234.
+$wgAWSBucketName = "north-central-positronics";
+
 #Textbox extension
 wfLoadExtension( 'InputBox' );
 

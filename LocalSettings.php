@@ -148,7 +148,7 @@ $wgLinkTitlesSmartMode = true;
 
 #Pre-loader (for new pages)
 wfLoadExtension( 'Preloader' );
-$wgPreloaderSource[ NS_MAIN ] = 'Template:Useful-content';
+$wgPreloaderSource[ NS_MAIN ] = 'Template:Game-footer';
 
 #Security
 #Limit edits from non-confirmed & anon members

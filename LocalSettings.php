@@ -141,8 +141,10 @@ wfLoadExtension( 'WikiEditor' );
 
 #Auto-Linker
 wfLoadExtension( 'LinkTitles' );
-# Create links when pages are created  or edited - not sure this is working
-$wgLinkTitlesParseOnEdit = true;
+# Create links when pages are created
+# Needs to have minor checkbox edit undefaulted - but breaks button links, so disabling for now
+# $wgDefaultUserOptions['minordefault'] = 1;
+# $wgLinkTitlesParseOnEdit = true;
 # remove case sensitivity with smart mode
 $wgLinkTitlesSmartMode = true;
 

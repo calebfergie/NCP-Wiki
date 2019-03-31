@@ -77,7 +77,7 @@ $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 ## Changes to allow GIFs to display and thumbnail properly
 # Increase max area to a really big number
-$wgMaxAnimatedGifArea = 223e7;
+$wgMaxAnimatedGifArea = 5e9;
 # Eliminate the time limit for the transcoder per https://phabricator.wikimedia.org/T206957
 $wgTranscodeBackgroundTimeLimit = 0;
 

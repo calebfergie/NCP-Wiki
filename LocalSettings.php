@@ -75,7 +75,11 @@ $wgMemCachedServers = [];
 $wgEnableUploads = true;
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
+## Changes to allow GIFs to display and thumbnail properly
+# Increase max area to a really big number
 $wgMaxAnimatedGifArea = 223e7;
+# Eliminate the time limit for the transcoder per https://phabricator.wikimedia.org/T206957
+$wgTranscodeBackgroundTimeLimit = 0;
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
 $wgUseInstantCommons = false;

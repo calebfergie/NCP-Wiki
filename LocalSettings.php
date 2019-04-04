@@ -124,13 +124,10 @@ $wgDiff3 = "/usr/bin/diff3";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
-wfLoadSkin( 'Tweeki' );
-$wgDefaultSkin = "tweeki";
-
-# End of automatically generated settings.
-# Add more configuration options below.
 
 #Caleb's Settings
+wfLoadSkin( 'Tweeki' );
+$wgDefaultSkin = "tweeki";
 
 #Favicon :P
 $wgFavicon = "$wgScriptPath/images/favicon.ico";
@@ -156,8 +153,23 @@ $wgAWSBucketName = "north-central-positronics";
 #Textbox extension
 wfLoadExtension( 'InputBox' );
 
-#Wiki Editor
-wfLoadExtension( 'WikiEditor' );
+#Text Editor
+#wfLoadExtension( 'WikiEditor' );
+wfLoadExtension( 'TinyMCE' );
+
+$wgTinyMCEPreservedTags = array(
+	'ol',
+	'ul',
+	'li',
+	'h1',
+	'h2',
+	'h3',
+	'h4',
+	'h5',
+	'h6',
+	'ta',
+	'div'
+);
 
 #Auto-Linker
 wfLoadExtension( 'LinkTitles' );

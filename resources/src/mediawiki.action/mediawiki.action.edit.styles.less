@@ -16,11 +16,12 @@
 		margin: 0;
 		display: block;
 		/* Ensure the textarea is not higher than browser's viewport on small screens */
-		max-height: 100vh;
+		max-height: 50vh;
 		/* But don't let it collapse into nothingness on really tiny screens */
-		min-height: 5em;
+		min-height: 8em;
 		background-color: #f2eaf7;
 		color: #372c3d;
+
 	}
 
 	/* Adjustments to edit form elements */
@@ -80,4 +81,12 @@
 		font-style: italic;
 		display: none;
 	}
+}
+
+#wpPreviewWidget {
+	display: none;
+}
+
+#wpDiffWidget {
+	display: none;
 }

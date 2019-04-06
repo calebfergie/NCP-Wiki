@@ -215,10 +215,5 @@ $wgTinyMCEMacros[] = array(
 $wgTinyMCEMacros[] = array(
 	'name' => 'Command Text Box',
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => '<inputbox>
-						type=search2
-						break=no
-						id=ugc
-						buttonlabel=do this
-						</inputbox>'
+	'text' => '<inputbox>\ntype=search2\nbreak=no\nid=ugc\nbuttonlabel=do this\n</inputbox>'
 );

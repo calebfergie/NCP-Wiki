@@ -74,10 +74,10 @@ class WikiEditorHooks {
 			return true;
 		}
 
-		// Give other extensions a chance to disable WikiEditor for this page.
-		if ( !Hooks::run( 'WikiEditorDisable', [ $editPage ] ) ) {
-			return true;
-		}
+		// Give other extensions a chance to disable WikiEditor for this page. Disabling for now.
+		// if ( !Hooks::run( 'WikiEditorDisable', [ $editPage ] ) ) {
+		// 	return true;
+		// }
 
 		$article = $editPage->getArticle();
 		$request = $article->getContext()->getRequest();

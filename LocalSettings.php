@@ -154,9 +154,9 @@ $wgAWSBucketName = "north-central-positronics";
 wfLoadExtension( 'InputBox' );
 
 #Text Editor
-## Load wikieditor for a basic editor
-wfLoadExtension( 'WikiEditor' );
-## Load TinyMCE where possible - https://www.mediawiki.org/wiki/Extension:TinyMCE "Using with WikiEditor"
+## Load wikieditor for a basic editor where possible - https://www.mediawiki.org/wiki/Extension:TinyMCE "Using with WikiEditor" Disabling
+# wfLoadExtension( 'WikiEditor' );
+## Load TinyMCE
 wfLoadExtension( 'TinyMCE' );
 
 $wgTinyMCEPreservedTags = array(

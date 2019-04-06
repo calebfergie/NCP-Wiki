@@ -206,7 +206,7 @@ require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 
 #TinyMCE Macros
 $wgTinyMCEMacros[] = array(
-	'name' => 'Reference',
+	'name' => 'Go Back Button',
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => '<ref>!INSERT TEXT HERE!</ref>'
+	'text' => '<historylink type="back">Go Back</historylink>'
 );

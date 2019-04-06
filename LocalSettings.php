@@ -154,8 +154,8 @@ $wgAWSBucketName = "north-central-positronics";
 wfLoadExtension( 'InputBox' );
 
 #Text Editor
-## Load wikieditor for a basic editor where possible - https://www.mediawiki.org/wiki/Extension:TinyMCE "Using with WikiEditor" Disabling
-# wfLoadExtension( 'WikiEditor' );
+## Load wikieditor for a basic editor where possible - https://www.mediawiki.org/wiki/Extension:TinyMCE "Using with WikiEditor"
+wfLoadExtension( 'WikiEditor' );
 ## Load TinyMCE
 wfLoadExtension( 'TinyMCE' );
 
@@ -215,5 +215,5 @@ $wgTinyMCEMacros[] = array(
 $wgTinyMCEMacros[] = array(
 	'name' => 'Command Text Box',
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => "<inputbox>\\ntype=search2\\nbreak=no\\nid=ugc\\nbuttonlabel=do this\\n</inputbox>"
+	'text' => "<inputbox><br>type=search2<br>break=no<br>id=ugc<br>buttonlabel=do this<br></inputbox>"
 );

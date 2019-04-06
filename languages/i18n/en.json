@@ -686,7 +686,7 @@
 	"accmailtitle": "Password sent",
 	"accmailtext": "A randomly generated password for [[User talk:$1|$1]] has been sent to $2. It can be changed on the <em>[[Special:ChangePassword|change password]]</em> page upon logging in.",
 	"newarticle": "(New)",
-	"newarticletext": "<strong>You are now making a new passage!</strong><br><br>Whatever you write in the editor below will appear when anyone types <strong>{{PAGENAME}}</strong>. Click \"Save Page\" below the editor to publish your passage.<br><br>Refer to the [[editing guide|Formatting Help]] for tips on how to make a good passage.<br>If you don't want to make a passage, you can <historylink type='back' go='2'>go back to where you were.</historylink>",
+	"newarticletext": "<strong>You are now making a new passage!</strong><br><br>Whatever you write in the editor below will appear when anyone types <strong>{{PAGENAME}}</strong>. Click \"Save Page\" below the editor to publish your passage.<br><br>Refer to the {{formatting-help-modal}} for tips on how to make a good passage.<br>If you don't want to make a passage, you can <historylink type='back' go='2'>go back to where you were.</historylink>",
 	"newarticletextanon": "{{int:newarticletext|$1}}",
 	"talkpagetext": "<!-- MediaWiki:talkpagetext -->",
 	"anontalkpagetext": "----\n<em>This is the discussion page for an anonymous user who has not created an account yet, or who does not use it.</em>\nWe therefore have to use the numerical IP address to identify them.\nSuch an IP address can be shared by several users.\nIf you are an anonymous user and feel that irrelevant comments have been directed at you, please [[Special:CreateAccount|create an account]] or [[Special:UserLogin|log in]] to avoid future confusion with other anonymous users.",

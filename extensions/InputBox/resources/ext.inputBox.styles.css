@@ -18,6 +18,7 @@
 	margin-bottom: 0.5em;
 }
 
+/* Hide the inputbox button so its just a textbox */
 input[name="create"], input[name="go"] {
 	display:none!important;
 }

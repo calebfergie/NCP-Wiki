@@ -2639,7 +2639,7 @@ ERROR;
 			if ( $this->context->getUser()->isLoggedIn() ) {
 				$out->wrapWikiMsg(
 					// Suppress the external link icon, consider the help url an internal one
-					"<div class=\"mw-newarticletext plainlinks\">\n$1\n</div>",
+					"<div class=\"mw-newarticletext plainlinks alert alert-info\">\n$1\n</div>",
 					[
 						'newarticletext',
 						$helpLink
@@ -2648,7 +2648,7 @@ ERROR;
 			} else {
 				$out->wrapWikiMsg(
 					// Suppress the external link icon, consider the help url an internal one
-					"<div class=\"mw-newarticletextanon plainlinks\">\n$1\n</div>",
+					"<div class=\"mw-newarticletextanon plainlinks alert alert-info\">\n$1\n</div>",
 					[
 						'newarticletextanon',
 						$helpLink

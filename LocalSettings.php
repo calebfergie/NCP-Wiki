@@ -207,6 +207,6 @@ require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 #TinyMCE Macros
 $wgTinyMCEMacros[] = array(
 	'name' => 'Reference',
-	'image' => '',
+	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
 	'text' => '<ref>!INSERT TEXT HERE!</ref>'
 );

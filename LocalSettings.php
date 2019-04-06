@@ -215,5 +215,5 @@ $wgTinyMCEMacros[] = array(
 $wgTinyMCEMacros[] = array(
 	'name' => 'Command Text Box',
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => "{{game-footer}}"
+	'text' => "{{command-line}}"
 );

@@ -171,7 +171,6 @@ $wgTinyMCEPreservedTags = array(
 	'h6',
 	'ta',
 	'div',
-	'anchor'
 );
 
 #Auto-Linker
@@ -218,6 +217,3 @@ $wgTinyMCEMacros[] = array(
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
 	'text' => "{{command-line}}"
 );
-
-#Modals as LINKS via Allow Anchor Tags
-require_once "$IP/extensions/AllowAnchorTags/AllowAnchorTags.php";

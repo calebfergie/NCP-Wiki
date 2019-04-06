@@ -24,7 +24,7 @@ class TinyMCEUploadForm extends HTMLForm {
 	protected $mSessionKey;
 	protected $mHideIgnoreWarning;
 	protected $mDestWarningAck;
-	
+
 	protected $mSourceIds;
 
 	## DC for TinyMCE
@@ -67,13 +67,13 @@ class TinyMCEUploadForm extends HTMLForm {
 
 		// Initialise variables used if editing existing file link
 		$this->mFile = $this->mDestFile;
-		$this->mHorizontalAlignment = "right";
+		$this->mHorizontalAlignment = "left";
 		$this->mVerticalAlignment = "middle";
-		$this->mFormat = "thumb";
+		$this->mFormat = "frameless";
 		$this->mLink = "";
 		$this->mAlt = "";
 		$this->mTitle = "";
-		$this->mWidth = "";
+		$this->mWidth = "700px";
 		$this->mHeight = "";
 
 		// If passed a valid select (ie valid wiki link) then we are editing an existing link

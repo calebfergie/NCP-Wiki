@@ -203,3 +203,10 @@ $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-in
 
 #Navigation
 require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
+
+#TinyMCE Macros
+$wgTinyMCEMacros[] = array(
+	'name' => 'Go Back Button',
+	'image' => '',
+	'text' => '<historylink type="back">Go Back</historylink>'
+);

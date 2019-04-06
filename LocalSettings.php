@@ -205,8 +205,20 @@ $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-in
 require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 
 #TinyMCE Macros
+## Go Back Button
 $wgTinyMCEMacros[] = array(
-	'name' => 'Go Back Button', 'Go Back Button 2',
-	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png', 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => '<historylink type="back">Go Back</historylink>',  '<historylink type="back">Go Back</historylink>'
+	'name' => 'Go Back Button',
+	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+	'text' => '<historylink type="back">Go Back</historylink>'
+);
+## Command Line Box
+$wgTinyMCEMacros[] = array(
+	'name' => 'Command Text Box',
+	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+	'text' => '<inputbox>
+						type=search2
+						break=no
+						id=ugc
+						buttonlabel=do this
+						</inputbox>'
 );

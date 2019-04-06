@@ -217,3 +217,7 @@ $wgTinyMCEMacros[] = array(
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
 	'text' => "{{command-line}}"
 );
+
+# Allow HTML Tags 'a' for Modals as links
+require_once "$IP/extensions/HTMLTags/HTMLTags.php";
+$wgHTMLTagsAttributes['a'] = array( 'href', 'class', 'data-toggle');

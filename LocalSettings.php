@@ -171,6 +171,7 @@ $wgTinyMCEPreservedTags = array(
 	'h6',
 	'ta',
 	'div',
+	'button'
 );
 
 #Auto-Linker

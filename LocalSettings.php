@@ -172,7 +172,8 @@ $wgTinyMCEPreservedTags = array(
 	'h6',
 	'ta',
 	'div',
-	'button'
+	'button',
+	'btn'
 );
 
 #Auto-Linker
@@ -204,7 +205,11 @@ $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-in
 #$wgTweekiSkinHideAnon = array( 'SEARCH' => true, 'sidebar-right' => true);
 
 #Navigation
+## History Link - simple back button
 require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
+## Breadcrumbs
+wfLoadExtension( 'BreadCrumbs2' );
+
 
 #TinyMCE Macros
 ## Go Back Button

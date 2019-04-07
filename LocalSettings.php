@@ -208,7 +208,11 @@ $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-in
 ## History Link - simple back button
 require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 ## Breadcrumbs
-wfLoadExtension( 'BreadCrumbs2' );
+# wfLoadExtension( 'BreadCrumbs2' );
+wfLoadExtension( 'BreadCrumbs' );
+$wgBreadCrumbsAllowUPOs = false; # Allow users to edit their BreadCrumbs preferences
+$wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Howigothere'; # Text to appear before breadcrumbs
+
 
 
 #TinyMCE Macros

@@ -208,13 +208,19 @@ wfLoadExtension( 'EmbedVideo' );
 ### TinyMCE Macros
 #### Go Back Button
 $wgTinyMCEMacros[] = array(
-	'name' => 'Go Back Button',
+	'name' => 'Add Go Back Button',
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
 	'text' => '<historylink type="back">Go Back</historylink>'
 );
 #### Command Line Box
 $wgTinyMCEMacros[] = array(
-	'name' => 'Command Text Box',
+	'name' => 'Add Command Text Box',
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
 	'text' => "{{command-line}}"
+);
+
+$wgTinyMCEMacros[] = array(
+	'name' => 'Add Youtube Video',
+	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+	'text' => "<youtube>!YOUR-YOUTUBE-LINK!</youtube>"
 );

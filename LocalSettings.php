@@ -159,7 +159,7 @@ wfLoadExtension( 'InputBox' );
 wfLoadExtension( 'TinyMCE' );
 ## Load wikieditor for a basic editor where possible - https://www.mediawiki.org/wiki/Extension:TinyMCE "Using with WikiEditor"
 wfLoadExtension( 'WikiEditor' );
-
+## HTML tags for TinyMCE to ignore
 $wgTinyMCEPreservedTags = array(
 	'ol',
 	'ul',
@@ -174,6 +174,20 @@ $wgTinyMCEPreservedTags = array(
 	'div',
 	'button',
 	'btn'
+);
+
+#TinyMCE Macros
+## Go Back Button
+$wgTinyMCEMacros[] = array(
+	'name' => 'Go Back Button',
+	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+	'text' => '<historylink type="back">Go Back</historylink>'
+);
+## Command Line Box
+$wgTinyMCEMacros[] = array(
+	'name' => 'Command Text Box',
+	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+	'text' => "{{command-line}}"
 );
 
 #Auto-Linker
@@ -198,36 +212,17 @@ $wgSpamRegex = "/online-casino|buy-viagra|adipex|phentermine|adult-website\.com|
 
 #UI
 #Tweeki
-#$wgTweekiSkinHideExcept['sidebar-left'] = ['Administrators'];
-#$wgTweekiSkinHideExcept['sidebar-left'] = ['sysop'];
-#$wgTweekiSkinHideExcept[array( 'SEARCH' => true, 'sidebar-right' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true)] = ['Administrators']
 $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-info'=> true, 'navbar' => true, 'SEARCH' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true, 'sidebar-right' => true, 'first-heading' => true);
-#$wgTweekiSkinHideAnon = array( 'SEARCH' => true, 'sidebar-right' => true);
 
 #Navigation
 ## History Link - simple back button
 require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 ## Breadcrumbs
-# wfLoadExtension( 'BreadCrumbs2' );
 wfLoadExtension( 'BreadCrumbs' );
-$wgBreadCrumbsAllowUPOs = false; # Allow users to edit their BreadCrumbs preferences
+$wgBreadCrumbsAllowUPOs = false; # Disallow users to edit their BreadCrumbs preferences
 $wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Adventure History: '; # Text to appear before breadcrumbs
 $wgDefaultUserOptions['breadcrumbs-filter-duplicates'] = true; # Exclude a page from the breadcrumbs if it's already in the list once.
-$wgBreadCrumbsIgnoreNameSpaces = array("Special:AllPages","Special:Search");
-
-#TinyMCE Macros
-## Go Back Button
-$wgTinyMCEMacros[] = array(
-	'name' => 'Go Back Button',
-	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => '<historylink type="back">Go Back</historylink>'
-);
-## Command Line Box
-$wgTinyMCEMacros[] = array(
-	'name' => 'Command Text Box',
-	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => "{{command-line}}"
-);
+$wgBreadCrumbsIgnoreNameSpaces = array("Special:AllPages","Special:Search"); #Exclude certain pages from breadcrumbs
 
 # Allow HTML Tags 'a' for Modals as links
 require_once "$IP/extensions/HTMLTags/HTMLTags.php";

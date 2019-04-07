@@ -159,38 +159,9 @@ wfLoadExtension( 'InputBox' );
 wfLoadExtension( 'TinyMCE' );
 ## Load wikieditor for a basic editor where possible - https://www.mediawiki.org/wiki/Extension:TinyMCE "Using with WikiEditor"
 wfLoadExtension( 'WikiEditor' );
-## HTML tags for TinyMCE to ignore
-$wgTinyMCEPreservedTags = array(
-	'ol',
-	'ul',
-	'li',
-	'h1',
-	'h2',
-	'h3',
-	'h4',
-	'h5',
-	'h6',
-	'ta',
-	'div',
-	'button',
-	'btn'
-);
 
-#TinyMCE Macros
-## Go Back Button
-$wgTinyMCEMacros[] = array(
-	'name' => 'Go Back Button',
-	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => '<historylink type="back">Go Back</historylink>'
-);
-## Command Line Box
-$wgTinyMCEMacros[] = array(
-	'name' => 'Command Text Box',
-	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => "{{command-line}}"
-);
-
-#Auto-Linker
+# Automation
+##Auto-Linker
 wfLoadExtension( 'LinkTitles' );
 # Create links when pages are created
 # Needs to have minor checkbox edit undefaulted - but breaks button links, so disabling for now
@@ -199,9 +170,9 @@ $wgLinkTitlesParseOnEdit = true;
 # remove case sensitivity with smart mode
 $wgLinkTitlesSmartMode = true;
 
-#Pre-loader (for new pages)
+##Pre-loader (for new pages)
 wfLoadExtension( 'Preloader' );
-$wgPreloaderSource[ NS_MAIN ] = 'Template:Useful-content';
+$wgPreloaderSource[ NS_MAIN ] = 'Template:Useful-content'; #autoloads a template into new pages
 
 #Security
 #Limit edits from non-confirmed & anon members
@@ -211,19 +182,39 @@ $wgRateLimits['edit']['ip'] = array( 4, 60 );
 $wgSpamRegex = "/online-casino|buy-viagra|adipex|phentermine|adult-website\.com|display:none|overflow:\s*auto;\s*height:\s*[0-4]px;/i";
 
 #UI
-#Tweeki
+##Tweeki
 $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-info'=> true, 'navbar' => true, 'SEARCH' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true, 'sidebar-right' => true, 'first-heading' => true);
 
-#Navigation
-## History Link - simple back button
+## Navigation
+### History Link - simple back button
 require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
-## Breadcrumbs
+### Breadcrumbs
 wfLoadExtension( 'BreadCrumbs' );
 $wgBreadCrumbsAllowUPOs = false; # Disallow users to edit their BreadCrumbs preferences
 $wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Adventure History: '; # Text to appear before breadcrumbs
 $wgDefaultUserOptions['breadcrumbs-filter-duplicates'] = true; # Exclude a page from the breadcrumbs if it's already in the list once.
 $wgBreadCrumbsIgnoreNameSpaces = array("Special:AllPages","Special:Search"); #Exclude certain pages from breadcrumbs
 
-# Allow HTML Tags 'a' for Modals as links
+# Customization & Features
+## Allow HTML Tags 'a' for Modals as links
 require_once "$IP/extensions/HTMLTags/HTMLTags.php";
 $wgHTMLTagsAttributes['a'] = array( 'href', 'class', 'data-toggle');
+$wgHTMLTagsAttributes['youtube'] = array( 'href');
+
+## Embed Video
+wfLoadExtension( 'EmbedVideo' );
+
+## Editor Customization
+### TinyMCE Macros
+#### Go Back Button
+$wgTinyMCEMacros[] = array(
+	'name' => 'Go Back Button',
+	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+	'text' => '<historylink type="back">Go Back</historylink>'
+);
+#### Command Line Box
+$wgTinyMCEMacros[] = array(
+	'name' => 'Command Text Box',
+	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+	'text' => "{{command-line}}"
+);

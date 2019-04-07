@@ -128,6 +128,7 @@ $wgDiff3 = "/usr/bin/diff3";
 #Caleb's Settings
 wfLoadSkin( 'Tweeki' );
 $wgDefaultSkin = "tweeki";
+$wgTweekiSkinUseBtnParser = true;
 
 #Favicon :P
 $wgFavicon = "$wgScriptPath/images/favicon.ico";

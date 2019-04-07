@@ -211,9 +211,9 @@ require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 # wfLoadExtension( 'BreadCrumbs2' );
 wfLoadExtension( 'BreadCrumbs' );
 $wgBreadCrumbsAllowUPOs = false; # Allow users to edit their BreadCrumbs preferences
-$wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Howigothere'; # Text to appear before breadcrumbs
-
-
+$wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Page History: '; # Text to appear before breadcrumbs
+$wgDefaultUserOptions['breadcrumbs-filter-duplicates'] = true; # Exclude a page from the breadcrumbs if it's already in the list once.
+$wgBreadCrumbsIgnoreNameSpaces = array("Special:AllPages");
 
 #TinyMCE Macros
 ## Go Back Button

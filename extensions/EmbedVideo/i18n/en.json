@@ -5,7 +5,7 @@
 	"embedvideo_description": "Adds a parser function embedding video from popular sources.",
 	"error_embedvideo_missingparams": "EmbedVideo is missing a required parameter.",
 	"error_embedvideo_service": "EmbedVideo does not recognize the video service \"$1\".",
-	"error_embedvideo_id": "EmbedVideo received the bad id \"$2\" for the service \"$1\".",
+	"error_embedvideo_id": "Double click me to add a youtube video",
 	"error_embedvideo_width": "EmbedVideo received the bad width parameter \"$1\".",
 	"error_embedvideo_height": "EmbedVideo received the bad height parameter \"$1\".",
 	"error_embedvideo_alignment": "EmbedVideo was given an illegal value for the alignment parameter \"$1\".  Valid values are \"left\", \"center\", or \"right\".",

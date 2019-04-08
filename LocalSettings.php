@@ -222,5 +222,5 @@ $wgTinyMCEMacros[] = array(
 $wgTinyMCEMacros[] = array(
 	'name' => 'Add Youtube Video',
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => "{{youtube-link}}"
+	'text' => "<youtube>!YOUR-YOUTUBE-LINK!</youtube>"
 );

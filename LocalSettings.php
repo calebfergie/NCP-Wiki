@@ -161,16 +161,20 @@ wfLoadExtension( 'TinyMCE' );
 wfLoadExtension( 'WikiEditor' );
 
 # Automation
-##Auto-Linker
+## Auto-Linker - generates links to existing pages when pages are created or edited
 wfLoadExtension( 'LinkTitles' );
-# Create links when pages are created
-# Needs to have minor checkbox edit undefaulted - but breaks button links, so disabling for now
+## Needs to have minor checkbox edit undefaulted - but breaks button links, so disabling for now
 $wgDefaultUserOptions['minordefault'] = 0;
+### Autolinker configuration
+#### Defaults, parse on edit
 $wgLinkTitlesParseOnEdit = true;
-# remove case sensitivity with smart mode
+$wgLinkTitlesSourceNamespace = [];
+$wgLinkTitlesTargetNamespaces = [];
+$wgLinkTitlesSamenamespace = true;
+#### remove case sensitivity with smart mode
 $wgLinkTitlesSmartMode = true;
 
-##Pre-loader (for new pages)
+# #Pre-loader - preloads a template into new pages
 wfLoadExtension( 'Preloader' );
 $wgPreloaderSource[ NS_MAIN ] = 'Template:Useful-content'; #autoloads a template into new pages
 

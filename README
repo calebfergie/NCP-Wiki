@@ -1,33 +1,30 @@
-== MediaWiki ==
+## North Central Positronics
+A **make** your own adventure game.
 
-MediaWiki is a free and open-source wiki software package written in PHP. It
-serves as the platform for Wikipedia and the other Wikimedia projects, used
-by hundreds of millions of people each month. MediaWiki is localised in over
-350 languages and its reliability and robust feature set have earned it a large
-and vibrant community of third-party users and developers.
+Set in the not-to-distant future, players can traverse through existing storylines by clicking links, or create their own by typing into command boxes.
 
-MediaWiki is:
+[Play NCP here](thesis.calebfergie.com).
 
-* feature-rich and extensible, both on-wiki and with hundreds of extensions;
-* scalable and suitable for both small and large sites;
-* simple to install, working on most hardware/software combinations; and
-* available in your language.
+### About NCP
+This game is *secretly a wiki* based on the software [MediaWiki](https://github.com/wikimedia/mediawiki). It is deployed through [Heroku](https://www.heroku.com/) following [this guide](https://gist.github.com/caseywatts/d04bda6626ef2c6c8f97) by [Casey Watts](https://github.com/caseywatts).
 
-For system requirements, installation, and upgrade details, see the files
-RELEASE-NOTES, INSTALL, and UPGRADE.
+All database information is stored in a [ClearDB MySQL database](https://elements.heroku.com/addons/cleardb) - except for images - which are stored in an [AWS S3 bucket](https://aws.amazon.com/s3/) and configured with the [AWS Extension](https://www.mediawiki.org/wiki/Extension:AWS) by [Edward Chernenko](https://www.mediawiki.org/wiki/User:Edward_Chernenko).
 
-* Ready to get started?
-** https://www.mediawiki.org/wiki/Special:MyLanguage/Download
-* Looking for the technical manual?
-** https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Contents
-* Seeking help from a person?
-** https://www.mediawiki.org/wiki/Special:MyLanguage/Communication
-* Looking to file a bug report or a feature request?
-** https://bugs.mediawiki.org/
-* Interested in helping out?
-** https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute
+The game largely owes its *look-and-feel* to highly customizable [Tweeki skin](https://github.com/thaider/Tweeki) by [Thadier](https://github.com/thaider).
 
-MediaWiki is the result of global collaboration and cooperation. The CREDITS
-file lists technical contributors to the project. The COPYING file explains
-MediaWiki's copyright and license (GNU General Public License, version 2 or
-later). Many thanks to the Wikimedia community for testing and suggestions.
+🙏Other extensions used in this project:
+* [WikiEditor](https://www.mediawiki.org/wiki/Extension:WikiEditor) & [TinyMCE](https://www.mediawiki.org/wiki/Extension:TinyMCE) for user-friendly editing
+* [InputBox](https://gerrit.wikimedia.org/g/mediawiki/extensions/InputBox) for the core "command line" text box
+* [Breadcrumbs](https://www.mediawiki.org/wiki/Extension:BreadCrumbs) & [HistoryLink](https://www.mediawiki.org/wiki/Extension:BrowserHistoryLink) for ease of navigation
+* [Preloader](https://www.mediawiki.org/wiki/Extension:Preloader) and [LinkTitles](https://www.mediawiki.org/wiki/Extension:LinkTitles) for a more streamlined user experience.
+* [Variables](https://www.mediawiki.org/wiki/Extension:Variables), [ParserFunctions](https://www.mediawiki.org/wiki/Help:Extension:ParserFunctions) and [URLGetParameters](https://www.mediawiki.org/wiki/Extension:UrlGetParameters) for managing in-game variables.
+* [EmbedVideo](https://www.mediawiki.org/wiki/Extension:EmbedVideo) in combination with [HTMLTags](https://www.mediawiki.org/wiki/Extension:HTML_Tags) for video embedding.
+* [SpamRegex](https://www.mediawiki.org/wiki/Extension:SpamRegex) for security
+
+### Project Context
+
+While we gladly recount "It's not about the destination, its about the journey", the results-based culture we live in often encourages the opposite.
+
+Despite our professed disdain for rigid procedures and bureaucracy, we find ourselves entrenched in economic and social systems that enforce behavioral compliance to protocol.
+
+This project is an online game and network that attempts to reframe and challenge the results-driven behavior imposed by modern constructs of control such as order, classification, and hierarchy.

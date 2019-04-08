@@ -204,6 +204,9 @@ $wgHTMLTagsAttributes['youtube'] = array( 'href');
 # Custom Variables
 ## Variables Extension
 wfLoadExtension( 'Variables' );
+## Parser Functions (for 'if' evaluation)
+wfLoadExtension( 'ParserFunctions' );
+$wgPFEnableStringFunctions = true;
 ## Allow Subpages for game elements (subpage as variable)
 $wgNamespacesWithSubpages[NS_MAIN] = true;
 

@@ -162,15 +162,10 @@ wfLoadExtension( 'WikiEditor' );
 
 # Automation
 ## Auto-Linker - generates links to existing pages when pages are created or edited
-wfLoadExtension( 'LinkTitles' );
 ## Needs to have minor checkbox edit undefaulted - but breaks button links, so disabling for now
 $wgDefaultUserOptions['minordefault'] = 0;
+wfLoadExtension( 'LinkTitles' );
 ### Autolinker configuration
-#### Defaults, parse on edit
-$wgLinkTitlesParseOnEdit = true;
-$wgLinkTitlesSourceNamespace = [];
-$wgLinkTitlesTargetNamespaces = [];
-$wgLinkTitlesSamenamespace = true;
 #### remove case sensitivity with smart mode
 $wgLinkTitlesSmartMode = true;
 

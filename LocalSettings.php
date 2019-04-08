@@ -201,14 +201,16 @@ require_once "$IP/extensions/HTMLTags/HTMLTags.php";
 $wgHTMLTagsAttributes['a'] = array( 'href', 'class', 'data-toggle');
 $wgHTMLTagsAttributes['youtube'] = array( 'href');
 
-# Custom Variables
-## Variables Extension
+## User Variables
+### Variables Extension
 wfLoadExtension( 'Variables' );
-## Parser Functions (for 'if' evaluation)
+### Parser Functions (for 'if' evaluation)
 wfLoadExtension( 'ParserFunctions' );
 $wgPFEnableStringFunctions = true;
-## Allow Subpages for game elements (subpage as variable)
+#### Allow Subpages for game elements (subpage as variable)
 $wgNamespacesWithSubpages[NS_MAIN] = true;
+### Pull parameters from URL
+require_once "$IP/extensions/UrlGetParameters/UrlGetParameters.php";
 
 ## Embed Video
 wfLoadExtension( 'EmbedVideo' );

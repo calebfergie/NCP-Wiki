@@ -193,7 +193,7 @@ wfLoadExtension( 'BreadCrumbs' );
 $wgBreadCrumbsAllowUPOs = false; # Disallow users to edit their BreadCrumbs preferences
 $wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Adventure History: '; # Text to appear before breadcrumbs
 $wgDefaultUserOptions['breadcrumbs-filter-duplicates'] = true; # Exclude a page from the breadcrumbs if it's already in the list once.
-$wgBreadCrumbsIgnoreNameSpaces = array("Special:AllPages","Special:Search"); #Exclude certain pages from breadcrumbs
+$wgBreadCrumbsIgnoreNameSpaces = array("Special:Search"); #Exclude certain pages from breadcrumbs
 
 # Customization & Features
 ## Allow HTML Tags 'a' for Modals as links
@@ -208,19 +208,19 @@ wfLoadExtension( 'EmbedVideo' );
 ### TinyMCE Macros
 #### Go Back Button
 $wgTinyMCEMacros[] = array(
-	'name' => 'Add Go Back Button',
+	'name' => 'Go Back Button',
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
 	'text' => '<historylink type="back">Go Back</historylink>'
 );
 #### Command Line Box
 $wgTinyMCEMacros[] = array(
-	'name' => 'Add Command Text Box',
+	'name' => 'Command Text Box',
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
 	'text' => "{{command-line}}"
 );
 
 $wgTinyMCEMacros[] = array(
-	'name' => 'Add Youtube Video',
+	'name' => 'Youtube Video',
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
 	'text' => "<youtube>!YOUR-YOUTUBE-LINK!</youtube>"
 );

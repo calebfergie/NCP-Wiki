@@ -201,6 +201,9 @@ require_once "$IP/extensions/HTMLTags/HTMLTags.php";
 $wgHTMLTagsAttributes['a'] = array( 'href', 'class', 'data-toggle');
 $wgHTMLTagsAttributes['youtube'] = array( 'href');
 
+## Allow Subpages for game elements
+$wgNamespacesWithSubpages[NS_MAIN] = true;
+
 ## Embed Video
 wfLoadExtension( 'EmbedVideo' );
 

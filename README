@@ -1,11 +1,11 @@
-## North Central Positronics ##
+## North Central Positronics
 A **make** your own adventure game. 
 
 Set in the not-to-distant future, players can traverse through existing storylines by clicking links, or create their own by typing into command boxes.
 
 [Play NCP here](thesis.calebfergie.com).
 
-### About NCP ###
+### About NCP
 This game is *secretly a wiki* based on the software [MediaWiki](https://github.com/wikimedia/mediawiki). It is deployed through [Heroku](https://www.heroku.com/) following [this guide](https://gist.github.com/caseywatts/d04bda6626ef2c6c8f97) by [Casey Watts](https://github.com/caseywatts).
 
 All database information is stored in a [ClearDB MySQL database](https://elements.heroku.com/addons/cleardb) - except for images - which are stored in an [AWS S3 bucket](https://aws.amazon.com/s3/) and configured with the [AWS Extension](https://www.mediawiki.org/wiki/Extension:AWS) by (Edward Chernenko)[https://www.mediawiki.org/wiki/User:Edward_Chernenko].
@@ -21,7 +21,7 @@ The game largely owes its *look-and-feel* to highly customizable [Tweeki skin](h
 * [EmbedVideo](https://www.mediawiki.org/wiki/Extension:EmbedVideo) in combination with [HTMLTags](https://www.mediawiki.org/wiki/Extension:HTML_Tags) for video embedding.
 * [SpamRegex](https://www.mediawiki.org/wiki/Extension:SpamRegex) for security
 
-### Project Context ###
+### Project Context
 
 While we gladly recount "It's not about the destination, its about the journey", the results-based culture we live in often encourages the opposite.
 

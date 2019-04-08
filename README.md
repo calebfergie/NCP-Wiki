@@ -3,7 +3,7 @@ A **make** your own adventure game.
 
 Set in the not-to-distant future, players can traverse through existing storylines by clicking links, or create their own by typing into command boxes.
 
-[Play NCP here](thesis.calebfergie.com).
+[Play NCP here](https://thesis.calebfergie.com).
 
 ### About NCP
 This game is *secretly a wiki* based on the software [MediaWiki](https://github.com/wikimedia/mediawiki). It is deployed through [Heroku](https://www.heroku.com/) following [this guide](https://gist.github.com/caseywatts/d04bda6626ef2c6c8f97) by [Casey Watts](https://github.com/caseywatts).

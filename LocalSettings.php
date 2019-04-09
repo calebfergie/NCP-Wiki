@@ -181,8 +181,8 @@ $wgRateLimits['edit']['ip'] = array( 4, 60 );
 $wgSpamRegex = "/online-casino|buy-viagra|adipex|phentermine|adult-website\.com|display:none|overflow:\s*auto;\s*height:\s*[0-4]px;/i";
 
 #UI
-## Open external links in new tab
-$wgExternalLinkTarget = '_blank';
+## Open external links in new tab - opens all green links in new tab tho - need to customize
+#$wgExternalLinkTarget = '_blank';
 
 ##Tweeki
 $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-info'=> true, 'navbar' => true, 'SEARCH' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true, 'sidebar-right' => true, 'first-heading' => true);

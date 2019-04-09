@@ -181,6 +181,9 @@ $wgRateLimits['edit']['ip'] = array( 4, 60 );
 $wgSpamRegex = "/online-casino|buy-viagra|adipex|phentermine|adult-website\.com|display:none|overflow:\s*auto;\s*height:\s*[0-4]px;/i";
 
 #UI
+## Open external links in new tab
+$wgExternalLinkTarget = '_blank';
+
 ##Tweeki
 $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-info'=> true, 'navbar' => true, 'SEARCH' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true, 'sidebar-right' => true, 'first-heading' => true);
 
@@ -214,23 +217,23 @@ require_once "$IP/extensions/UrlGetParameters/UrlGetParameters.php";
 ## Embed Video
 wfLoadExtension( 'EmbedVideo' );
 
-### Editor Customization
-#### TinyMCE Macros
-##### Go Back Button
-#$wgTinyMCEMacros[] = array(
-#	'name' => 'Go Back Button',
-#	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-#	'text' => '<historylink type="back">Go Back</historylink>'
-#);
-##### Command Line Box
-#$wgTinyMCEMacros[] = array(
-#	'name' => 'Command Text Box',
-#	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-#	'text' => "{{command-line}}"
-#);
-#
-#$wgTinyMCEMacros[] = array(
-#	'name' => 'Youtube Video',
-#	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-#	'text' => "<youtube>!YOUR-YOUTUBE-LINK!</youtube>"
-#);
+## Editor Customization
+### TinyMCE Macros
+#### Go Back Button
+$wgTinyMCEMacros[] = array(
+	'name' => 'Go Back Button',
+	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+	'text' => '<historylink type="back">Go Back</historylink>'
+);
+#### Command Line Box
+$wgTinyMCEMacros[] = array(
+	'name' => 'Command Text Box',
+	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+	'text' => "{{command-line}}"
+);
+
+$wgTinyMCEMacros[] = array(
+	'name' => 'Youtube Video',
+	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+	'text' => "<youtube>!YOUR-YOUTUBE-LINK!</youtube>"
+);

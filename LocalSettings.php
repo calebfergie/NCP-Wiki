@@ -214,23 +214,23 @@ require_once "$IP/extensions/UrlGetParameters/UrlGetParameters.php";
 ## Embed Video
 wfLoadExtension( 'EmbedVideo' );
 
-## Editor Customization
-### TinyMCE Macros
-#### Go Back Button
-$wgTinyMCEMacros[] = array(
-	'name' => 'Go Back Button',
-	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => '<historylink type="back">Go Back</historylink>'
-);
-#### Command Line Box
-$wgTinyMCEMacros[] = array(
-	'name' => 'Command Text Box',
-	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => "{{command-line}}"
-);
-
-$wgTinyMCEMacros[] = array(
-	'name' => 'Youtube Video',
-	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
-	'text' => "<youtube>!YOUR-YOUTUBE-LINK!</youtube>"
-);
+### Editor Customization
+#### TinyMCE Macros
+##### Go Back Button
+#$wgTinyMCEMacros[] = array(
+#	'name' => 'Go Back Button',
+#	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+#	'text' => '<historylink type="back">Go Back</historylink>'
+#);
+##### Command Line Box
+#$wgTinyMCEMacros[] = array(
+#	'name' => 'Command Text Box',
+#	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+#	'text' => "{{command-line}}"
+#);
+#
+#$wgTinyMCEMacros[] = array(
+#	'name' => 'Youtube Video',
+#	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
+#	'text' => "<youtube>!YOUR-YOUTUBE-LINK!</youtube>"
+#);

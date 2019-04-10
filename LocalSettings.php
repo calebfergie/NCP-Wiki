@@ -180,6 +180,15 @@ $wgRateLimits['edit']['ip'] = array( 4, 60 );
 #Regex on common spam words via SpamRegex extension
 $wgSpamRegex = "/online-casino|buy-viagra|adipex|phentermine|adult-website\.com|display:none|overflow:\s*auto;\s*height:\s*[0-4]px;/i";
 
+#Analytics
+## Headscript with Google Analytics Tracking
+require_once "$IP/extensions/HeadScript/HeadScript.php";
+### GA code in headscript
+$wgHeadScriptCode = <<<'START_END_MARKER'
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138072554-1"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-138072554-1');</script>
+START_END_MARKER;
+
 #UI
 ## Open external links in new tab - opens all green links in new tab tho - need to customize
 #$wgExternalLinkTarget = '_blank';

@@ -135,11 +135,12 @@ $wgFavicon = "$wgScriptPath/images/favicon.ico";
 
 #Debugging info in browers when Exception happens
 $wgShowExceptionDetails = true;
+#Regex editing of pages (installed for categories)
+require_once "$IP/extensions/MassEditRegex/MassEditRegex.php";
 
-#AWS Extension
+#AWS Extension - for images
 wfLoadExtension( 'AWS' );
 // Configure AWS credentials.
-// THIS IS NOT NEEDED if your EC2 instance has an IAM instance profile.
 $wgAWSCredentials = [
 	'key' => getenv("AWS_ACCESS_KEY_ID"),
 	'secret' => getenv("AWS_SECRET_ACCESS_KEY"),

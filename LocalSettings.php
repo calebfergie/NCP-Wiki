@@ -157,6 +157,8 @@ wfLoadExtension( 'InputBox' );
 #Text Editor
 ## Load TinyMCE
 wfLoadExtension( 'TinyMCE' );
+## Disable TinyMCE in the category namespace (creating error otherwise)
+$wgTinyMCEDisabledNamespaces = array(NS_CATEGORY);
 ## Load wikieditor for a basic editor where possible - https://www.mediawiki.org/wiki/Extension:TinyMCE "Using with WikiEditor"
 wfLoadExtension( 'WikiEditor' );
 

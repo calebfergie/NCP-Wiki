@@ -137,6 +137,8 @@ $wgFavicon = "$wgScriptPath/images/favicon.ico";
 $wgShowExceptionDetails = true;
 #Regex editing of pages (installed for categories)
 require_once "$IP/extensions/MassEditRegex/MassEditRegex.php";
+## Admins only
+$wgGroupPermissions['sysop']['masseditregex'] = true;
 
 #AWS Extension - for images
 wfLoadExtension( 'AWS' );

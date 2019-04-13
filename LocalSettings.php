@@ -133,14 +133,24 @@ $wgTweekiSkinUseBtnParser = true;
 #Favicon :P
 $wgFavicon = "$wgScriptPath/images/favicon.ico";
 
-#Debugging info in browers when Exception happens
+#Wiki Management
+# Debugging info in browers when Exception happens
 $wgShowExceptionDetails = true;
-#Regex editing of pages (installed for categories)
+
+# Regex for mass editing of pages (installed for categories)
 require_once "$IP/extensions/MassEditRegex/MassEditRegex.php";
-## Admins only
+## Admins only on mass regex
 $wgGroupPermissions['sysop']['masseditregex'] = true;
 
-#AWS Extension - for images
+# Google Analytics Tracking with Headscript
+require_once "$IP/extensions/HeadScript/HeadScript.php";
+## GA code in headscript
+$wgHeadScriptCode = <<<'START_END_MARKER'
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138072554-1"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-138072554-1');</script>
+START_END_MARKER;
+
+#AWS Extension - for image storage
 wfLoadExtension( 'AWS' );
 // Configure AWS credentials.
 $wgAWSCredentials = [
@@ -148,21 +158,19 @@ $wgAWSCredentials = [
 	'secret' => getenv("AWS_SECRET_ACCESS_KEY"),
 	'token' => false
 ];
-
 $wgAWSRegion = 'us-east-1'; # Northern Virginia
-
-// Replace <something> with the name of your S3 bucket, e.g. wonderfulbali234.
 $wgAWSBucketName = "north-central-positronics";
 
-#Textbox extension
+#CORE
+##Textbox extension
 wfLoadExtension( 'InputBox' );
 
-#Text Editor
-## Load TinyMCE
+##Text Editor
+### Load TinyMCE
 wfLoadExtension( 'TinyMCE' );
 ## Disable TinyMCE in the category namespace (creating error otherwise)
 $wgTinyMCEDisabledNamespaces = array(NS_CATEGORY);
-## Load wikieditor for a basic editor where possible - https://www.mediawiki.org/wiki/Extension:TinyMCE "Using with WikiEditor"
+### Load wikieditor for a basic editor where possible - https://www.mediawiki.org/wiki/Extension:TinyMCE "Using with WikiEditor"
 wfLoadExtension( 'WikiEditor' );
 
 # Automation
@@ -174,37 +182,28 @@ wfLoadExtension( 'LinkTitles' );
 #### remove case sensitivity with smart mode
 $wgLinkTitlesSmartMode = true;
 
-# #Pre-loader - preloads a template into new pages
+# Pre-loader - preloads a template into new pages
 wfLoadExtension( 'Preloader' );
 $wgPreloaderSource[ NS_MAIN ] = 'Template:Useful-content'; #autoloads a template into new pages
 
-#Security
-#Limit edits from non-confirmed & anon members
+# SECURITY
+## Limit edits from non-confirmed & anon members
 $wgRateLimits['edit']['newbie'] = array( 10, 60 );
 $wgRateLimits['edit']['ip'] = array( 4, 60 );
 #Regex on common spam words via SpamRegex extension
 $wgSpamRegex = "/online-casino|buy-viagra|adipex|phentermine|adult-website\.com|display:none|overflow:\s*auto;\s*height:\s*[0-4]px;/i";
 
-#Analytics
-## Headscript with Google Analytics Tracking
-require_once "$IP/extensions/HeadScript/HeadScript.php";
-### GA code in headscript
-$wgHeadScriptCode = <<<'START_END_MARKER'
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138072554-1"></script>
-<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-138072554-1');</script>
-START_END_MARKER;
-
-#UI
+# UI
 ## Open external links in new tab - opens all green links in new tab tho - need to customize
 #$wgExternalLinkTarget = '_blank';
 
 ##Tweeki
 $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-info'=> true, 'navbar' => true, 'SEARCH' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true, 'sidebar-right' => true, 'first-heading' => true);
 
-## Navigation
-### History Link - simple back button
+### Navigation
+#### History Link - simple back button
 require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
-### Breadcrumbs
+#### Breadcrumbs
 wfLoadExtension( 'BreadCrumbs' );
 $wgBreadCrumbsAllowUPOs = false; # Disallow users to edit their BreadCrumbs preferences
 $wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Adventure History: '; # Text to appear before breadcrumbs

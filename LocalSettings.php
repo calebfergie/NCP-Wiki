@@ -198,17 +198,40 @@ $wgSpamRegex = "/online-casino|buy-viagra|adipex|phentermine|adult-website\.com|
 #$wgExternalLinkTarget = '_blank';
 
 ##Tweeki
+### Hide major elements
 $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-info'=> true, 'navbar' => true, 'SEARCH' => true, 'TOOLBOX' => true, 'TOOLBOX-EXT' => true, 'sidebar-right' => true, 'first-heading' => true);
+### Add modal
+$wgTweekiSkinSpecialElements['HTMODAL'] = 'htmodal';
+
+function htmodal( $skin, $context ) {
+    echo '<button data-toggle="modal" data-target="#formattingHelpButtonModal">Launch Modal</button>
+		<div class="modal fade" id="formattingHelpButtonModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		 <div class="modal-dialog">
+		   <div class="modal-content">
+		     <div class="modal-header">
+		       <btn type="button" class="close" data-dismiss="modal" aria-label="Close">
+		         <span aria-hidden="true">×</span>
+		       </btn>
+		       <h4 class="modal-title">Formatting Help</h4>
+		     </div>
+		     <div class="modal-body">{{formatting-help}}</div>
+		     <div class="modal-footer">
+		       <btn class="btn btn-secondary" data-dismiss="modal">Close</btn>
+		     </div>
+		   </div>
+		 </div>
+		</div>';
+}
 
 ### Navigation
 #### History Link - simple back button
 require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 #### Breadcrumbs
-wfLoadExtension( 'BreadCrumbs' );
+wfLoadExtension( 'BreadCrumbs' ); #last update 3 yrs ago, may need to change to new BC (bc2 etc)- https://www.mediawiki.org/wiki/Extension_talk:BreadCrumbs
 $wgBreadCrumbsAllowUPOs = false; # Disallow users to edit their BreadCrumbs preferences
 $wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Adventure History: '; # Text to appear before breadcrumbs
 $wgDefaultUserOptions['breadcrumbs-filter-duplicates'] = true; # Exclude a page from the breadcrumbs if it's already in the list once.
-$wgBreadCrumbsIgnoreNameSpaces = array("Special:Search"); #Exclude certain pages from breadcrumbs
+$wgBreadCrumbsIgnoreNameSpaces = array("Special:Search"); #Exclude certain pages from breadcrumbs - NOT WORKING
 
 # Customization & Features
 ## Allow HTML Tags 'a' for Modals as links

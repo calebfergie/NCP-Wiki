@@ -206,9 +206,8 @@ $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-in
 require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 #### Breadcrumbs
 wfLoadExtension( 'BreadCrumbs' ); #last update 3 yrs ago, may need to change to new BC (bc2 etc)- https://www.mediawiki.org/wiki/Extension_talk:BreadCrumbs
-$wgBreadCrumbsAllowUPOs = false; # Disallow users to edit their BreadCrumbs preferences
 $wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Adventure History: '; # Text to appear before breadcrumbs
-$wgBreadCrumbsIgnoreNameSpaces = array('Special','MediaWiki'); #Exclude certain pages from breadcrumbs - NOT WORKING
+$wgBreadCrumbsIgnoreNameSpaces = array('Special','MediaWiki','Template'); #Exclude certain namespaces from breadcrumbs
 
 # Customization & Features
 ## Allow HTML Tags 'a' for Modals as links

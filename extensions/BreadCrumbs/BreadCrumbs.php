@@ -32,7 +32,7 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 $wgBreadCrumbsShowAnons = true;
 
 /** @var bool Should users be allowed to configure BreadCrumbs Options? */
-$wgBreadCrumbsAllowUPOs = true;
+$wgBreadCrumbsAllowUPOs = false;
 
 /** @var bool Whether to ignore page refreshes */
 $wgBreadCrumbsIgnoreRefreshes = true;
@@ -44,4 +44,4 @@ $wgBreadCrumbsRearrangeHistory = false;
 $wgBreadCrumbsLink = true;
 
 /** @var string[] If you don't want certain Namespaces recorded, add them here */
-$wgBreadCrumbsIgnoreNameSpaces = ['NS_SPECIAL'];
+$wgBreadCrumbsIgnoreNameSpaces = ['Special'];

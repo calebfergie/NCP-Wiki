@@ -205,7 +205,8 @@ $wgTweekiSkinSpecialElements['HTMODAL'] = 'htmodal';
 
 function htmodal( $skin, $context ) {
     echo '<div class="btn btn-primary btn-block">
-		<button data-toggle="modal">Formatting Help</button>
+		<htmltag tagname="a" href="#formattingHelpModal" data-toggle="modal">Formatting Help</htmltag>
+		</div>
 		<div class="modal fade" id="formattingHelpButtonModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		 <div class="modal-dialog">
 		   <div class="modal-content">
@@ -222,7 +223,7 @@ function htmodal( $skin, $context ) {
 		   </div>
 		 </div>
 		</div>
-		</div>';
+		';
 }
 
 ### Navigation

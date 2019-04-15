@@ -44,4 +44,4 @@ $wgBreadCrumbsRearrangeHistory = false;
 $wgBreadCrumbsLink = true;
 
 /** @var string[] If you don't want certain Namespaces recorded, add them here */
-$wgBreadCrumbsIgnoreNameSpaces = [NS_SPECIAL];
+$wgBreadCrumbsIgnoreNameSpaces = ['NS_SPECIAL'];

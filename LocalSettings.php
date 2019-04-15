@@ -204,7 +204,7 @@ $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-in
 $wgTweekiSkinSpecialElements['HTMODAL'] = 'htmodal';
 
 function htmodal( $skin, $context ) {
-    echo '<button class="btn btn-primary btn-block">Launch <htmltag tagname="a" href="#formattingHelpModal" data-toggle="modal">Formatting Help</htmltag></button>
+    echo '<button data-toggle="modal" class="btn btn-primary btn-block">Formatting Help</button>
 		<div class="modal fade" id="formattingHelpButtonModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		 <div class="modal-dialog">
 		   <div class="modal-content">

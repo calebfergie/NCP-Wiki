@@ -208,8 +208,7 @@ require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 wfLoadExtension( 'BreadCrumbs' ); #last update 3 yrs ago, may need to change to new BC (bc2 etc)- https://www.mediawiki.org/wiki/Extension_talk:BreadCrumbs
 $wgBreadCrumbsAllowUPOs = false; # Disallow users to edit their BreadCrumbs preferences
 $wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Adventure History: '; # Text to appear before breadcrumbs
-$wgDefaultUserOptions['breadcrumbs-filter-duplicates'] = true; # Exclude a page from the breadcrumbs if it's already in the list once.
-# $wgBreadCrumbsIgnoreNameSpaces = array('NS_SPECIAL'); #Exclude certain pages from breadcrumbs - NOT WORKING
+$wgBreadCrumbsIgnoreNameSpaces = array('NS_SPECIAL','Special','SpecialPages'); #Exclude certain pages from breadcrumbs - NOT WORKING
 
 # Customization & Features
 ## Allow HTML Tags 'a' for Modals as links

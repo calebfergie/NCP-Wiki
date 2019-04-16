@@ -209,7 +209,8 @@ $wgBreadCrumbsIgnoreNameSpaces = array('Special','MediaWiki','Template'); #Exclu
 $wgDefaultUserOptions['breadcrumbs-filter-duplicates'] = true; # Exclude a page from the breadcrumbs if it's already in the list once.
 
 #### Author information
-wfLoadExtension( 'ContributionCredits' );
+# wfLoadExtension( 'ContributionCredits' );
+$wgMaxCredits = 4;
 
 # Customization & Features
 ## Allow HTML Tags 'a' for Modals as links

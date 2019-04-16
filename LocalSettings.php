@@ -178,6 +178,7 @@ wfLoadExtension( 'WikiEditor' );
 ## Needs to have minor checkbox edit undefaulted - but breaks button links, so disabling for now
 $wgDefaultUserOptions['minordefault'] = 0;
 wfLoadExtension( 'LinkTitles' );
+$wgLinkTitlesParseOnEdit = true;
 ### Autolinker configuration
 #### remove case sensitivity with smart mode
 # $wgLinkTitlesSmartMode = true;
@@ -205,7 +206,7 @@ $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-in
 #### History Link - simple back button
 # require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 #### Breadcrumbs
-wfLoadExtension( 'BreadCrumbs' ); #last update 3 yrs ago, may need to change to new BC (bc2 etc)- https://www.mediawiki.org/wiki/Extension_talk:BreadCrumbs
+wfLoadExtension( 'BreadCrumbs' ); # "How did I get here?" - breadcrumbs show ya!"
 $wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Adventure History: '; # Text to appear before breadcrumbs
 $wgBreadCrumbsIgnoreNameSpaces = array('Special','MediaWiki','Template'); #Exclude certain namespaces from breadcrumbs
 $wgDefaultUserOptions['breadcrumbs-filter-duplicates'] = true; # Exclude a page from the breadcrumbs if it's already in the list once.

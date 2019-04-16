@@ -209,7 +209,7 @@ $wgBreadCrumbsIgnoreNameSpaces = array('Special','MediaWiki','Template'); #Exclu
 $wgDefaultUserOptions['breadcrumbs-filter-duplicates'] = true; # Exclude a page from the breadcrumbs if it's already in the list once.
 
 #### Author information
-require_once "$IP/extensions/Contributors/Contributors.php";
+wfLoadExtension( 'ContributionCredits' );
 
 # Customization & Features
 ## Allow HTML Tags 'a' for Modals as links
@@ -231,9 +231,6 @@ require_once "$IP/extensions/UrlGetParameters/UrlGetParameters.php";
 ## Embed Video
 wfLoadExtension( 'EmbedVideo' );
 
-##MANUAL UPDATE
-$wgUpgradeKey = '3b51d2a9705d0b21';
-
 ## Editor Customization
 ### TinyMCE Macros
 #### Go Back Button
@@ -254,3 +251,6 @@ $wgTinyMCEMacros[] = array(
 	'image' => 'https://www.pvhc.net/img19/ssvwsbotkkiyjmkteonc.png',
 	'text' => "<youtube>!YOUR-YOUTUBE-LINK!</youtube>"
 );
+
+##MANUAL UPDATE	key (April 15)
+# $wgUpgradeKey = '3b51d2a9705d0b21';

@@ -180,7 +180,7 @@ $wgDefaultUserOptions['minordefault'] = 0;
 wfLoadExtension( 'LinkTitles' );
 ### Autolinker configuration
 #### remove case sensitivity with smart mode
-$wgLinkTitlesSmartMode = true;
+# $wgLinkTitlesSmartMode = true;
 
 # Pre-loader - preloads a template into new pages
 wfLoadExtension( 'Preloader' );
@@ -208,6 +208,7 @@ require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 wfLoadExtension( 'BreadCrumbs' ); #last update 3 yrs ago, may need to change to new BC (bc2 etc)- https://www.mediawiki.org/wiki/Extension_talk:BreadCrumbs
 $wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Adventure History: '; # Text to appear before breadcrumbs
 $wgBreadCrumbsIgnoreNameSpaces = array('Special','MediaWiki','Template'); #Exclude certain namespaces from breadcrumbs
+$wgDefaultUserOptions['breadcrumbs-filter-duplicates'] = true; # Exclude a page from the breadcrumbs if it's already in the list once.
 
 # Customization & Features
 ## Allow HTML Tags 'a' for Modals as links

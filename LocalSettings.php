@@ -201,11 +201,15 @@ $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-in
 ### Navigation
 #### History Link - simple back button
 require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
+
 #### Breadcrumbs
 wfLoadExtension( 'BreadCrumbs' ); # "How did I get here?" - breadcrumbs show ya!"
 $wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Adventure History: '; # Text to appear before breadcrumbs
 $wgBreadCrumbsIgnoreNameSpaces = array('Special','MediaWiki','Template'); #Exclude certain namespaces from breadcrumbs
 $wgDefaultUserOptions['breadcrumbs-filter-duplicates'] = true; # Exclude a page from the breadcrumbs if it's already in the list once.
+
+#### Author information
+require_once "$IP/extensions/Contributors/Contributors.php";
 
 # Customization & Features
 ## Allow HTML Tags 'a' for Modals as links

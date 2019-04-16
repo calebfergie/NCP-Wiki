@@ -1,0 +1,61 @@
+{
+	"name": "Contributors",
+	"version": "2.0",
+	"author": [
+		"Rob Church",
+		"Ike Hecht",
+		"Addshore",
+		"Devirk Rishnan"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Contributors",
+	"descriptionmsg": "contributors-desc",
+	"type": "specialpage",
+	"SpecialPages": {
+		"Contributors": "SpecialContributors"
+	},
+	"APIPropModules": {
+		"contributors": "ApiQueryContributors"
+	},
+	"MessagesDirs": {
+		"Contributors": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"ContributorsMagic": "Contributors.magic.php",
+		"ContributorsAlias": "Contributors.alias.php"
+	},
+	"AutoloadClasses": {
+		"Contributors": "includes/Contributors.php",
+		"SpecialContributors": "includes/SpecialContributors.php",
+		"ContributorsHooks": "includes/ContributorsHooks.php",
+		"ContributorsTablePager":"includes/ContributorsTablePager.php",
+		"ApiQueryContributors":"api/ApiQueryCnContributors.php"
+	},
+	"Hooks": {
+		"PageContentSaveComplete": [
+			"ContributorsHooks::onPageContentSaveComplete"
+		],
+		"ArticleRevisionVisibilitySet": [
+			"ContributorsHooks::onArticleRevisionVisibilitySet"
+		],
+		"LoadExtensionSchemaUpdates": [
+			"ContributorsHooks::onLoadExtensionSchemaUpdates"
+		],
+		"SkinTemplateBuildNavUrlsNav_urlsAfterPermalink": [
+			"ContributorsHooks::onSkinTemplateBuildNavUrlsNav_urlsAfterPermalink"
+		],
+		"SkinTemplateToolboxEnd": [
+			"ContributorsHooks::onSkinTemplateToolboxEnd"
+		],
+		"ParserFirstCallInit": [
+			"ContributorsHooks::setupParserFunction"
+		]
+	},
+	"config": {
+		"ContributorsLimit": 10,
+		"ContributorsThreshold": 2,
+		"ContributorsLinkUsers": true
+	},
+	"manifest_version": 1
+}

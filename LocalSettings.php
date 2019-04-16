@@ -231,6 +231,9 @@ require_once "$IP/extensions/UrlGetParameters/UrlGetParameters.php";
 ## Embed Video
 wfLoadExtension( 'EmbedVideo' );
 
+##MANUAL UPDATE
+$wgUpgradeKey = '3b51d2a9705d0b21';
+
 ## Editor Customization
 ### TinyMCE Macros
 #### Go Back Button

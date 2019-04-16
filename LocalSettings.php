@@ -167,21 +167,17 @@ wfLoadExtension( 'InputBox' );
 
 ##Text Editor
 ### Load TinyMCE
-# wfLoadExtension( 'TinyMCE' );
-## Disable TinyMCE in the category namespace (creating error otherwise)
-# $wgTinyMCEDisabledNamespaces = array(NS_CATEGORY);
+wfLoadExtension( 'TinyMCE' );
+$wgTinyMCEDisabledNamespaces = array(NS_CATEGORY); ## Disable TinyMCE in the category namespace (creating error otherwise)
 ### Load wikieditor for a basic editor where possible - https://www.mediawiki.org/wiki/Extension:TinyMCE "Using with WikiEditor"
 wfLoadExtension( 'WikiEditor' );
 
 # Automation
 ## Auto-Linker - generates links to existing pages when pages are created or edited
-## Needs to have minor checkbox edit undefaulted - but breaks button links, so disabling for now
-$wgDefaultUserOptions['minordefault'] = 0;
-wfLoadExtension( 'LinkTitles' );
-$wgLinkTitlesParseOnEdit = true;
-### Autolinker configuration
-#### remove case sensitivity with smart mode
-# $wgLinkTitlesSmartMode = true;
+# $wgDefaultUserOptions['minordefault'] = 0; ## Needs to have minor checkbox edit undefaulted
+# wfLoadExtension( 'LinkTitles' );
+# $wgLinkTitlesParseOnEdit = true; ## insert link after edit
+# $wgLinkTitlesSmartMode = true; ## remove case sensitivity with smart mode
 
 # Pre-loader - preloads a template into new pages
 wfLoadExtension( 'Preloader' );
@@ -189,8 +185,8 @@ $wgPreloaderSource[ NS_MAIN ] = 'Template:Useful-content'; #autoloads a template
 
 # SECURITY
 ## Limit edits from non-confirmed & anon members
-$wgRateLimits['edit']['newbie'] = array( 10, 60 );
-$wgRateLimits['edit']['ip'] = array( 4, 60 );
+$wgRateLimits['edit']['newbie'] = array( 10, 60 ); # new users
+$wgRateLimits['edit']['ip'] = array( 4, 60 ); # anon users
 #Regex on common spam words via SpamRegex extension
 $wgSpamRegex = "/online-casino|buy-viagra|adipex|phentermine|adult-website\.com|display:none|overflow:\s*auto;\s*height:\s*[0-4]px;/i";
 

@@ -200,7 +200,7 @@ $wgTweekiSkinHideAll = array('footer' => true,'firstHeading' => true, 'footer-in
 
 ### Navigation
 #### History Link - simple back button
-# require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
+require_once("$IP/extensions/BrowserHistoryLink/BrowserHistoryLink.php");
 #### Breadcrumbs
 wfLoadExtension( 'BreadCrumbs' ); # "How did I get here?" - breadcrumbs show ya!"
 $wgDefaultUserOptions['breadcrumbs-preceding-text'] = 'Adventure History: '; # Text to appear before breadcrumbs

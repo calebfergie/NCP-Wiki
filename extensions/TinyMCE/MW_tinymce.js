@@ -14,7 +14,7 @@ var mw_skin = mw.config.get( 'skin' );
 var mw_skin_css = '/load.php?debug=false&lang=en-gb&modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.' + mw_skin + '.styles&only=styles&skin=' + mw_skin ;
 
 window.mwTinyMCEInit = function( tinyMCESelector ) {
-	window.tinymce.init({ 
+	window.tinymce.init({
 //		selector: '.tinymce',
 		selector: tinyMCESelector,
 		branding: false,
@@ -24,7 +24,7 @@ window.mwTinyMCEInit = function( tinyMCESelector ) {
 		tinyMCEMacros: tinyMCEMacros,
 		automatic_uploads: true,
 		paste_data_images: true,
-		content_css: 
+		content_css:
 			[extensionAssetsPath + '/TinyMCE/MW_tinymce.css',
 			scriptPath + mw_skin_css],
 		theme_url: extensionAssetsPath + '/TinyMCE/tinymce/themes/modern/theme.js',
@@ -32,17 +32,17 @@ window.mwTinyMCEInit = function( tinyMCESelector ) {
 		paste_word_valid_elements: 'b,strong,i,em,h1,h2,h3,h4,h5,table,thead,tfoot,tr,th,td,ol,ul,li,a,sub,sup,strike,br,del,div,p',
 		invalid_elements: 'tbody',
 		wiki_non_rendering_newline_character: '&para;', // set to false if you don't use non-rendering single new lines in wiki
-		wiki_tags_list: tinyMCETagList, 
+		wiki_tags_list: tinyMCETagList,
 		browser_spellcheck: true,
 		wikimagic_context_toolbar: true,
 		browsercontextmenu_context_toolbar: true,
-		contextmenu: "undo redo | cut copy paste insert | link wikimagic inserttable | styleselect removeformat | browsercontextmenu",
+		contextmenu: " insert | link wikimagic | browsercontextmenu",
 		convert_fonts_to_spans: true,
 		link_title: false,
-		link_assume_external_targets: true,
+		link_assume_external_targets: false,
 		link_class_list: [
-			{title: 'External', value: 'link external mw-external-link mceNonEditable'},
 			{title: 'Internal', value: 'link internal mw-internal-link mceNonEditable'},
+			{title: 'External', value: 'link external mw-external-link mceNonEditable'},
 		],
 		target_list: false,
 		visual_table_class : "wikitable",
@@ -77,7 +77,7 @@ window.mwTinyMCEInit = function( tinyMCESelector ) {
 		//apply in a correct manner. This may be dangerous.
 		body_id: 'bodyContent',
 		//Allowable file typr for file picker
-		file_picker_types: 'file image media', 
+		file_picker_types: 'file image media',
 		//Enable/disable options in upload popup
 		image_description: true,
 		image_title: true,
@@ -113,7 +113,7 @@ window.mwTinyMCEInit = function( tinyMCESelector ) {
 		menubar: false, //'edit insert view format table tools',
 		contextmenu_never_use_native: false,
 		removed_menuitems: 'media',
-		toolbar1: 'undo redo | cut copy paste insert | bold italic underline strikethrough subscript superscript forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | charmap singlelinebreak wikilink unlink table wikiupload wikimagic wikisourcecode | formatselect removeformat | searchreplace ',
+		toolbar1: 'insert | forecolor backcolor bold italic underline strikethrough subscript superscript | bullist numlist | charmap wikilink unlink wikiupload wikisourcecode ',
 		style_formats_merge: true,
 		style_formats: [
 			{title: "Table", items: [
@@ -133,7 +133,7 @@ window.mwTinyMCEInit = function( tinyMCESelector ) {
 				{title: "Paragraph", block: "p" }
 		],
 		images_upload_credentials: true,
-		autoresize_max_height: 400,
+		autoresize_max_height: 500,
 		setup: function(editor) {
 
 	},
@@ -153,7 +153,7 @@ window.mwTinyMCEInit = function( tinyMCESelector ) {
 		input.setAttribute('type', 'file');
 		input.onchange = function() {
 			var file = this.files[0];
-      
+
 			var reader = new FileReader();
 			reader.onload = function (e) {
 				var fileContent = file;
@@ -163,7 +163,7 @@ window.mwTinyMCEInit = function( tinyMCESelector ) {
 			};
 			reader.readAsDataURL(file);
 		};
-    
+
 		input.click();
 	}
     });

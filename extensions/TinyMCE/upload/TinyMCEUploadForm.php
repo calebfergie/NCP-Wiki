@@ -95,7 +95,7 @@ class TinyMCEUploadForm extends HTMLForm {
 							$this->mHorizontalAlignment = $nodearray[$i];
 						} elseif ( in_array( $nodearray[$i], array( "middle", "top", "bottom", "baseline", "sub", "super", "text-top", "text-bottom" ) ) ) {
 							$this->mVerticalAlignment = $nodearray[$i];
-						} elseif ( in_array( $nodearray[$i], array( "thumb", "border", "frame", "frameless" ) ) ) {
+						} elseif ( in_array( $nodearray[$i], array( "frameless", "thumb", "border", "frame" ) ) ) {
 							$this->mFormat = $nodearray[$i];
 ## DC To Do link not picked up as part of Node so next bit doesen't work
 						} elseif ( strpos( $nodearray[$i], 'link=' ) > -1 ) {
@@ -480,10 +480,10 @@ class TinyMCEUploadForm extends HTMLForm {
 				'label-message' => 'tinymce-format',
 				'size' => 1,
 				'options' => array(
+					'Frameless' => 'frameless',
 					'Thumb' => 'thumb',
 					'Border' => 'border',
 					'Frame' => 'frame',
- 					'Frameless' => 'frameless',
 				),
 				'default' => $this->mFormat,
 			),

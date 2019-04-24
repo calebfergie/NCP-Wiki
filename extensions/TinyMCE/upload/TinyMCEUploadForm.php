@@ -485,7 +485,7 @@ class TinyMCEUploadForm extends HTMLForm {
 					'Border' => 'border',
 					'Frame' => 'frame',
 				),
-				'default' => $this->mFormat,
+				'default' => 'frameless',
 			),
 		);
 

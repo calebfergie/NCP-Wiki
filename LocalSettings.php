@@ -73,8 +73,7 @@ $wgMemCachedServers = [];
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
 $wgEnableUploads = true;
-$wgGroupPermissions['edit']['newbie'] = true; # ensure new users can upload images from the getgo
-$wgGroupPermissions['ip']['upload'] = true; #try to let anon users upload images as well
+$wgGroupPermissions['*']['upload'] = true; #let anybody upload images
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 ## Changes to allow GIFs to display and thumbnail properly

@@ -1,9 +1,9 @@
 ## North Central Positronics
-A **make** your own adventure game.
+A **make** your own adventure game. **[Read all about it here.](https://blog.calebfergie.com/2019/05/21/north-central-positronics/)**
 
 Set in the not-to-distant future, players can traverse through existing storylines by clicking links, or create their own by typing into command boxes.
 
-[Play NCP here](https://thesis.calebfergie.com).
+[Play NCP here](https://thesis.calebfergie.com). *link not working? [This may be why](https://blog.calebfergie.com/2019/05/21/north-central-positronics/#update).*
 
 ### About NCP
 This game is *secretly a wiki* based on the software [MediaWiki](https://github.com/wikimedia/mediawiki). It is deployed through [Heroku](https://www.heroku.com/) following [this guide](https://gist.github.com/caseywatts/d04bda6626ef2c6c8f97) by [Casey Watts](https://github.com/caseywatts).

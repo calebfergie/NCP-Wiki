@@ -73,7 +73,8 @@ $wgMemCachedServers = [];
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
 $wgEnableUploads = true;
-$wgGroupPermissions['*']['upload'] = true; #let anybody upload images
+$wgGroupPermissions['sysop']['upload'] = true; #limit uploads to sysops because of bots
+# $wgGroupPermissions['*']['upload'] = true; #let anybody upload images - commented out because of bots
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 ## Changes to allow GIFs to display and thumbnail properly
@@ -186,9 +187,17 @@ wfLoadExtension( 'Preloader' );
 $wgPreloaderSource[ NS_MAIN ] = 'Template:Useful-content'; #autoloads a template into new pages
 
 # SECURITY
-## Limit edits from non-confirmed & anon members
-$wgRateLimits['edit']['newbie'] = array( 10, 60 ); # new users
-$wgRateLimits['edit']['ip'] = array( 4, 60 ); # anon users
+## Limit edits from any non admin to prevent further db growth - comment this out for a functional version
+# Disable anonymous editing - because bots!
+$wgGroupPermissions['*']['edit'] = false;
+
+# Prevent new user registrations except by sysops - because bots
+$wgGroupPermissions['*']['createaccount'] = false;
+
+## Uncomment for functional version Limit edits from anyone non-confirmed & anon members
+# $wgRateLimits['edit']['newbie'] = array( 10, 60 ); # new users
+# $wgRateLimits['edit']['ip'] = array( 4, 60 ); # anon users
+
 #Regex on common spam words via SpamRegex extension
 $wgSpamRegex = "/online-casino|buy-viagra|adipex|phentermine|adult-website\.com|display:none|overflow:\s*auto;\s*height:\s*[0-4]px;/i";
 
